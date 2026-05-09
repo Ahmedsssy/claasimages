@@ -7,7 +7,7 @@ from PIL import Image
 def load_image_model():
     # هنا حطينا اسم الموديل اللي في الرابط بالظبط
     # استبدل السطر القديم بالسطر ده:
-return pipeline("image-classification", model="google/vit-base-patch16-224")
+  return pipeline("image-classification", model="google/vit-base-patch16-224")
 
 img_pipe = load_image_model()
 
