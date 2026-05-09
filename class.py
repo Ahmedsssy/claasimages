@@ -6,7 +6,8 @@ from PIL import Image
 @st.cache_resource
 def load_image_model():
     # هنا حطينا اسم الموديل اللي في الرابط بالظبط
-    return pipeline("image-classification", model="kamangir/image-classifier")
+    # استبدل السطر القديم بالسطر ده:
+return pipeline("image-classification", model="google/vit-base-patch16-224")
 
 img_pipe = load_image_model()
 
